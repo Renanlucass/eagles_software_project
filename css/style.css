@@ -1,25 +1,26 @@
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-h1{
-    color: #daa520;
+h1 {
+  color: #daa520;
 }
 
-.log{
-    margin-top: 5%;
+.log {
+  margin-top: 5%;
 }
 
-img{
-    width: 20%;
-    height: 100%;
+img {
+  width: 20%;
+  height: 100%;
 }
- .log{
-    text-align: center;
- }
 
-button{
+.log {
+  text-align: center;
+}
+
+button {
   background: #daa520;
   padding: 10px 30px;
   border-radius: 30px;
@@ -29,14 +30,14 @@ button{
   font-weight: bold;
   letter-spacing: 1px;
 }
-  
-button{
+
+button {
   text-decoration: none;
   font-weight: none;
 
 }
-  
-.btn{
+
+.btn {
   color: #fff;
   text-align: center;
 }
