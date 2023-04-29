@@ -11,20 +11,38 @@
 
 <body>
   <h1>Login</h1>
-  <form class="card">
+  <form>
 
-    <label for="email">Usuario/E-mail:</label>
-    <input type="email" id="email" name="email" placeholder="example@gmail.com">
+    <div class="logo-and-name">
+      <img src="imagens/logo.png" alt="Logo">
+      <h4>EAGLE'S SOFTWARE</h4>
+    </div>
 
-    <label for="password">Senha:</label>
-    <input type="password" id="password" name="password" placeholder="*******">
-    <div class="forgot-password">
-      <a href="#">Esqueceu a senha?</a>
+    <div class="card">
+
+      <div class="center">
+        <label for="email">Usuário</label>
+        <div class="iconUser">
+          <img src="imagens/iconPerson.png" alt="icone de usuario">
+          <input type="email" id="email" name="email" placeholder="example@gmail.com">
+        </div>
+
+        <label for="password">Senha</label>
+        <div class="passwordUser">
+          <img src="imagens/cadeado.png" alt="icone de senha">
+          <input type="password" id="password" name="password" placeholder="*******">
+
+        </div>
+
+        <div class="forgot-password">
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+
+      </div>
     </div>
 
     <input type="submit" value="Entrar">
   </form>
-  </div>
 </body>
 
 </html>
