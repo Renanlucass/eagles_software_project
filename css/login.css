@@ -1,18 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  /* background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 2%, rgba(23, 48, 190, 1) 53%, rgba(0, 212, 255, 1) 100%); */
-  /* background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 10%, rgba(1, 27, 190, 1) 60%, rgba(6, 172, 205, 1) 100%); */
-  /* background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(19, 12, 138, 1) 10%, rgba(1, 27, 190, 1) 60%, rgba(78, 5, 154, 1) 81%); */
-  /* background: rgb(3, 1, 27);
-  background: linear-gradient(90deg, rgba(3, 1, 27, 1) 0%, rgba(18, 9, 125, 1) 27%, rgba(20, 22, 149, 1) 46%, rgba(7, 85, 150, 1) 81%); */
-
-  /* background: rgb(4, 0, 50); */
-  /* background: linear-gradient(90deg, rgba(4, 0, 50, 1) 0%, rgba(35, 139, 255, 1) 90%); */
-  background: linear-gradient(to right, #87ceeb, #836FFF)!important;
-  /* background: linear-gradient(to right, #87ceeb, #4f94cd)!important; */
+  background: linear-gradient(to right, #87ceeb, #836FFF) !important;
 }
 
 h1 {
@@ -32,15 +20,7 @@ form {
 }
 
 .card {
-  background-color: #fff!important;
-  /* background: linear-gradient(to right, #87ceeb, #4f94cd); */
-  /* background-color: rgba(19, 19, 19, 0.3); */
-  /* background: rgb(3, 1, 27);
-  background: linear-gradient(90deg, rgba(3, 1, 27, 1) 0%, rgba(18, 9, 125, 1) 27%, rgba(20, 22, 149, 1) 46%, rgba(7, 85, 150, 1) 81%); */
-  /* background: rgb(3, 1, 27); */
-  /* background: linear-gradient(90deg, rgba(3, 1, 27, 1) 0%, rgba(8, 45, 166, 1) 0%, rgba(7, 8, 66, 1) 69%); */
-  /* background: rgb(4, 0, 50); */
-  /* background: linear-gradient(90deg, rgba(4, 0, 50, 1) 0%, rgba(35, 139, 255, 1) 90%); */
+  background-color: #fff !important;
   padding: 50px;
   border-radius: 10px;
   width: 300px;

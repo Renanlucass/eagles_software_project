@@ -1,8 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  /* background: rgb(4, 0, 50);
-  background: linear-gradient(90deg, rgba(4, 0, 50, 1) 0%, rgba(35, 139, 255, 1) 90%); */
-  background: linear-gradient(to right, #87ceeb, #836FFF)!important;
+  background: linear-gradient(to right, #87ceeb, #836FFF) !important;
 }
 
 h1 {
@@ -25,8 +23,6 @@ form {
 }
 
 .card {
-  /*background: rgb(4, 0, 50);
-  background: linear-gradient(90deg, rgba(4, 0, 50, 1) 0%, rgba(35, 139, 255, 1) 90%);*/
   padding: 50px;
   border-radius: 10px;
   width: 300px;
