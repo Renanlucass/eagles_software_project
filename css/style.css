@@ -1,26 +1,23 @@
 body {
-
   padding: 0;
   font-size: larger;
   margin-top: 20%;
   font-style: oblique;
 }
 
-h1 {
+.log {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.log h1 {
   color: #daa520;
 }
 
-.log {
-  margin-top: 5%;
-}
 
-img {
+.logo {
   width: 20%;
   height: 100%;
-}
-
-.log {
-  text-align: center;
 }
 
 .bt{
