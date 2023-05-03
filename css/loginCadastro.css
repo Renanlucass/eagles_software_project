@@ -8,6 +8,7 @@ h1 {
   color: #000;
   font-size: 25px;
   margin-block-start: auto;
+  margin: revert;
 }
 
 h4 {
@@ -22,7 +23,7 @@ h4 {
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-right: 70px;
 }
 
 .logo-and-name img {
@@ -38,7 +39,7 @@ form {
   padding: 2.5cm;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px 10px lightslategrey;
+  box-shadow: 0px 10px 40px #a3a3a3;
 }
 
 .center {
@@ -114,13 +115,14 @@ input[type="submit"] {
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .forgot-password {
-  text-align: center;
-  margin-bottom: 17px;
+  text-align: end;
   font-size: 15px;
-  margin-left: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
 }
 
 a {
@@ -128,6 +130,24 @@ a {
   text-decoration: none;
   font-family: inherit;
   font-style: oblique;
+}
+
+a.register{
+  margin-left: 15%;
+}
+
+.signUp{
+  text-align: center;
+  margin-left: 25px;
+}
+
+a.sign{
+  text-decoration: underline;
+}
+
+p{
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 span {
