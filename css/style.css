@@ -98,7 +98,8 @@ img.logo {
 }
 
 .home-btn:hover {
-  background: #fc4c35;
+  background: #6d1bf0;
+  box-shadow: 0 0 10px 1px blueviolet;
 }
 
 .home-img img {
