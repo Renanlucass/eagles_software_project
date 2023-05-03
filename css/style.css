@@ -122,6 +122,11 @@ img.logo {
     gap: 5rem;
   }
 
+  .home-text{
+    margin-top: 50px;
+    max-width: 37rem;
+  }
+
   .home .text-h4 {
     font-size: 15px;
   }
