@@ -192,7 +192,7 @@ span {
 
 @media (max-width: 396px){
   form{
-    margin-top: 35%;
+    margin-top: 25%;
   }
 
   .logo-and-name img{
@@ -201,6 +201,6 @@ span {
 
   .texto-h4{
     width: 50%;
-    font-size: 10px;
+    font-size: 9px;
   }
 }
