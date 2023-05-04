@@ -24,6 +24,7 @@ h1 {
   justify-content: center;
   margin-bottom: 20px;
   margin-right: 40px;
+  margin-left: 20px;
 }
 
 .logo-and-name img {
@@ -146,22 +147,28 @@ p{
 }
 
 span {
+  color: #000;
+  margin-left: 15%;
+}
+
+.link-cadastro{
   color: #038b8b;
 }
 
 @media (max-width:785px){
   .logo-and-name img{
-    max-width: 25%;
+    max-width: 20%;
   }
 
   form{
     padding: 1.5cm;
     margin-top: 20%;
+    max-width: 70%;
   }
 
   .texto-h4{
     width: 50%;
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
@@ -177,22 +184,43 @@ span {
 
   .texto-h4{
     width: 50%;
-    font-size: 11px;
+    font-size: 13px;
+  }
+
+  input[type="submit"]{
+    margin-right: 100px;
   }
 
   .forgot-password{
     font-size: 12px;
   }
 
-  span{
+  .link-cadastro{
     text-align: center;
-    margin-left: 35%;
+    margin-left: 38%;
+  }
+
+  span{
+    margin-left: 25%;
+    font-size: 15px;
   }
 }
 
-@media (max-width: 396px){
+@media(max-width: 484px){
   form{
-    margin-top: 25%;
+    margin-top: 30%;
+    max-width: 65%;
+  }
+
+  .texto-h4{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 425px){
+  form{
+    margin-top: 30%;
+    max-width: 65%;
   }
 
   .logo-and-name img{
@@ -202,5 +230,21 @@ span {
   .texto-h4{
     width: 50%;
     font-size: 9px;
+  }
+
+  span{
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 393px){
+  form{
+    margin-top: 30%;
+    max-width: 65%;
+  }
+
+  .texto-h4{
+    width: 50%;
+    font-size: 8px;
   }
 }
