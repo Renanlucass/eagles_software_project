@@ -414,10 +414,28 @@ span {
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
-.principal{
+.body-principal{
   height: 100vh; 
   margin: 0;
   padding: 0;
+}
+
+.header-inicial{
+  width: 100%;
+  height: 6em;
+  display: flex;
+  background-color: ghostwhite;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 2px 20px #a3a3a3;
+}
+
+.logo-header{
+  margin-right: auto;
+}
+
+.img-header{
+  width: 20%;
 }
 
 nav.menu-lateral {
@@ -426,9 +444,7 @@ nav.menu-lateral {
   background-color: #202020;
   padding: 5px;
   box-shadow: 3px 0 0 #008B8B;
-
   position: fixed;
-  top: 0;
   left: 0;
   overflow: hidden;
   transition: .5s;
@@ -450,6 +466,11 @@ nav.menu-lateral.expandir {
 
 span.icon{
   color: #fff;
+  margin-left: 0;
+}
+
+.main{
+  display: flex;
 }
 
 ul {
@@ -476,6 +497,7 @@ ul li.item-menu a {
   padding: 15px;
   display: flex;
   margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
 }
 
 ul li.item-menu a .txt-link {
