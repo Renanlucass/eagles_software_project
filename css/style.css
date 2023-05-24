@@ -16,11 +16,6 @@
   --dark: #1e1c2a;
 }
 
-body {
-  color: var(--dark);
-  background: var(--white);
-}
-
 .navigation {
   background-color: ghostwhite;
   display: flex;
@@ -101,7 +96,7 @@ img.logo{
 }
 
 .home-btn:hover {
-  background: #6d1bf0;
+  background: blueviolet;
   box-shadow: 0 0 10px 1px blueviolet;
 }
 
@@ -163,9 +158,10 @@ img.logo{
 
 /*CSS das páginas de login e cadastro*/
 
-body {
+.principal {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #87ceeb, #836FFF) !important;
+  background: linear-gradient(to right, #87ceeb, #836FFF);
+  
 }
 
 h1 {
@@ -412,4 +408,90 @@ span {
     width: 50%;
     font-size: 8px;
   }
+}
+
+/* CSS da página inicial */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+.principal{
+  height: 100vh; 
+  margin: 0;
+  padding: 0;
+}
+
+nav.menu-lateral {
+  width: 80px;
+  height: 100%;
+  background-color: #202020;
+  padding: 5px;
+  box-shadow: 3px 0 0 #008B8B;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+
+nav.menu-lateral.expandir {
+  width: 300px;
+}
+
+.btn-expandir {
+  width: 100%;
+}
+
+.btn-expandir>i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+span.icon{
+  color: #fff;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+}
+
+ul li.item-menu {
+  transition: .2s;
+}
+
+ul li.ativo {
+  background-color: #008B8B;
+}
+
+ul li.item-menu:hover {
+  background: #008B8B;
+}
+
+ul li.item-menu a {
+  color: #fff;  
+  text-decoration: none;
+  font-size: 15px;
+  padding: 15px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+ul li.item-menu a .txt-link {
+  margin-left: 70px;
+  transition: .5s;
+  opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+  margin-left: 30px;
+  opacity: 1;
+  margin: 10px;
+  color: #fff;
+}
+
+ul li.item-menu a .icon>i {
+  font-size: 30px;
+  margin-left: 10px;
 }
