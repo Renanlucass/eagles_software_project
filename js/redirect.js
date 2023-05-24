@@ -1,12 +1,11 @@
-// Redireciona para a página home
+// Redirecionando para a página home
 
 document.addEventListener("DOMContentLoaded", function () {
     // Obtém o formulário de login
     var form = document.querySelector("form");
 
-    // Adiciona um evento de escuta ao evento "submit" do formulário
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Previne o envio padrão do formulário
+        event.preventDefault(); 
 
         // Redireciona para a página home
         window.location.href = "telaInicio.html";
@@ -15,17 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Função para visualizar senha
 
-document.getElementById('toggleButton').addEventListener('click', function () {
-    var passwordInput = document.getElementById('password');
-    var toggleButton = document.getElementById('toggleButton');
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#password');
 
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        toggleButton.classList.remove('bi-eye-slash');
-        toggleButton.classList.add('bi-eye');
-    } else {
-        passwordInput.type = 'password';
-        toggleButton.classList.remove('bi-eye');
-        toggleButton.classList.add('bi-eye-slash');
-    }
+togglePassword.addEventListener('click', function () {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.classList.toggle('bi-eye');
+    this.classList.toggle('bi-eye-slash');
 });

@@ -250,14 +250,6 @@ input::placeholder {
   color: #000;
 }
 
-.bi-eye::before {
-  content: "\\e75c";
-}
-
-.bi-eye-slash::before {
-  content: "\\e75d";
-}
-
 .userName {
   margin-top: 10px;
   margin-left: 5px;
@@ -277,9 +269,24 @@ input::placeholder {
   position: relative;
 }
 
+.confirmPassword{
+  margin-top: 10px;
+  margin-left: 5px;
+  display: flex;
+  position: relative;
+}
+
+.confirmPassword i{
+  font-size: 25px;  
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+}
+
 img.icones{
   max-width: 50px;
   max-height: 30px;
+  margin-top: 5px;
 }
 
 input[type="submit"] {
@@ -299,7 +306,7 @@ input[type="submit"] {
 .forgot-password {
   text-align: end;
   font-size: 13px;
-  margin-right: 50px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
