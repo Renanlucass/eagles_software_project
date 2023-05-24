@@ -472,7 +472,6 @@ nav.menu-lateral {
   height: 100%;
   background-color: #202020;
   padding: 5px;
-  box-shadow: 3px 0 0 #008B8B;
   position: fixed;
   left: 0;
   overflow: hidden;
@@ -489,7 +488,7 @@ nav.menu-lateral.expandir {
 
 .btn-expandir>i {
   color: #fff;
-  font-size: 24px;
+  font-size: 35px;
   cursor: pointer;
 }
 
