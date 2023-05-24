@@ -12,3 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "telaInicio.html";
     });
 });
+
+// Função para visualizar senha
+
+document.getElementById('toggleButton').addEventListener('click', function () {
+    var passwordInput = document.getElementById('password');
+    var toggleButton = document.getElementById('toggleButton');
+
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleButton.classList.remove('bi-eye-slash');
+        toggleButton.classList.add('bi-eye');
+    } else {
+        passwordInput.type = 'password';
+        toggleButton.classList.remove('bi-eye');
+        toggleButton.classList.add('bi-eye-slash');
+    }
+});

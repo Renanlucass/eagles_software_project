@@ -160,8 +160,17 @@ img.logo{
 
 .principal {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #87ceeb, #836FFF);
-  
+  background: linear-gradient(to right, #87ceeb, #836FFF); 
+  height: 100%;
+  margin: 0;
+}
+
+.main-log{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
 }
 
 h1 {
@@ -185,7 +194,6 @@ h1 {
   justify-content: center;
   margin-bottom: 20px;
   margin-right: 40px;
-  margin-left: 20px;
 }
 
 .logo-and-name img {
@@ -195,10 +203,7 @@ h1 {
 
 form {
   max-width: 400px;
-  margin: 10%;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 2.5cm;
+  padding: 1.8cm; 
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 10px 40px #a3a3a3;
@@ -223,8 +228,8 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
-  width: 75%;
+input[type="password"]{
+  width: 100%;
   margin-left: 10px;
   border-color: #000;
   color: #000;
@@ -234,8 +239,23 @@ input[type="password"] {
   text-align: start;
 }
 
+.passwordUser i{
+  font-size: 25px;  
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+}
+
 input::placeholder {
   color: #000;
+}
+
+.bi-eye::before {
+  content: "\\e75c";
+}
+
+.bi-eye-slash::before {
+  content: "\\e75d";
 }
 
 .userName {
@@ -254,6 +274,7 @@ input::placeholder {
   margin-top: 10px;
   margin-left: 5px;
   display: flex;
+  position: relative;
 }
 
 img.icones{
@@ -277,8 +298,8 @@ input[type="submit"] {
 
 .forgot-password {
   text-align: end;
-  font-size: 15px;
-  margin-right: 30px;
+  font-size: 13px;
+  margin-right: 50px;
   margin-bottom: 20px;
 }
 
@@ -309,7 +330,8 @@ p{
 
 span {
   color: #000;
-  margin-left: 15%;
+  margin-left: 10%;
+  font-size: 15px;
 }
 
 .link-cadastro{
