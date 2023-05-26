@@ -35,7 +35,7 @@
    -webkit-text-fill-color: transparent;
  }
 
- .common {
+ .home-common {
    padding: 10px;
    min-height: 100vh;
    position: relative;
@@ -564,7 +564,7 @@
  .h2-inicial{
   background: linear-gradient(135deg, #4e54c8, #8f94fb, #4e54c8);
 -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+-webkit-text-fill-color: transparent; 
  }
 
  .navigation {
