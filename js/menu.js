@@ -1,23 +1,41 @@
 
-//Seleciona os itens clicado
-var menuItem = document.querySelectorAll('.item-menu')
+const body = document.querySelector('body'),
+  sidebar = body.querySelector('nav'),
+  toggle = body.querySelector(".toggle"),
+  searchBtn = body.querySelector(".search-box"),
+  modeSwitch = body.querySelector(".toggle-switch"),
+  modeText = body.querySelector(".mode-text");
 
-function selectLink() {
-  menuItem.forEach((item) =>
-    item.classList.remove('ativo')
-  )
-  this.classList.add('ativo')
-}
 
-menuItem.forEach((item) =>
-  item.addEventListener('click', selectLink)
-)
+toggle.addEventListener("click", () => {
+  sidebar.classList.toggle("close");
+})
 
-//Expandir o menu
+searchBtn.addEventListener("click", () => {
+  sidebar.classList.remove("close");
+})
 
-var btnExp = document.querySelector('#btn-exp')
-var menuSide = document.querySelector('.menu-lateral')
+modeSwitch.addEventListener("click", () => {
+  body.classList.toggle("dark");
 
-btnExp.addEventListener('click', function () {
-  menuSide.classList.toggle('expandir')
+  if (body.classList.contains("dark")) {
+    modeText.innerText = "Light mode";
+  } else {
+    modeText.innerText = "Dark mode";
+
+  }
+});
+
+const questions = document.querySelectorAll('.pergunta-resposta');
+
+questions.forEach(function (question) {
+  const btn = question.querySelector('.question-btn');
+  btn.addEventListener("click", function () {
+    questions.forEach(function (item) {
+      if (item !== question) {
+        item.classList.remove("show-text");
+      }
+    })
+    question.classList.toggle("show-text");
+  })
 })
