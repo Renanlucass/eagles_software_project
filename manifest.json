@@ -1,17 +1,22 @@
 {
+  "name": "Sistema achados e perdidos Eagles Software",
+  "short_name": "Eagles Software",
+  "start_url": "index.html",
   "background_color": "#1e1f31",
+  "theme_color": "#1e1f31",
   "description": "Projetado para ajudar a comunidade acadêmica a recuperar itens perdidos dentro do campus.",
   "dir": "auto",
   "display": "standalone",
-  "name": "Sistema achados e perdidos Eagles Software",
   "orientation": "any",
-  "scope": "/",
-  "short_name": "Eagles Software",
-  "start_url": "index.html",
-  "theme_color": "#1e1f31",
   "categories": [],
   "screenshots": [],
-  "icons": [],
+  "icons": [
+    {
+      "src": "imagens/logo.png",
+      "sizes": "512x512",
+      "type": "imagePage.png"
+    }
+  ],
   "shortcuts": [],
-  "lang": "pt"
+  "lang": "pt-br"
 }
