@@ -677,18 +677,18 @@
  }
 
  .toggle {
-   position: absolute;
-   top: 50%;
-   right: -35px;
-   font-size: 25px;
-   transform: translateY(-50%) rotate(180deg);
-   height: 25px;
-   width: 25px;
-   color: #000;
-   display: flex;
-   align-items: center;
-   transition: all 0.3s ease;
-   cursor: pointer;
+  position: absolute;
+  top: 100px;
+  right: -5%;
+  font-size: 25px;
+  transform: translateY(-50%) rotate(180deg);
+  height: 25px;
+  width: 25px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
  }
 
  .close .toggle {
@@ -890,7 +890,7 @@
  .btn-acao {
    display: flex;
    justify-content: center;
-   margin-top: 20px;
+   margin-top: 10px;
  }
 
  .btn-submit {
@@ -1074,4 +1074,109 @@
 
  .show-text .up-icon {
    display: inline;
+ }
+
+ @media(max-width: 1280px) {
+  .formItem{
+    width: 700px;
+    height: 720px;
+    padding: 20px;
+    margin-left: 10%;
+  }
+
+  .input-file-upload{
+    margin-top: -46%;
+  }
+ }
+
+ @media(max-width: 1024px){
+
+  #titulo{
+    margin: 0;
+  }
+
+  .sidebar{
+    width: 170px;
+  }
+
+  .formItem{
+    width: auto;
+    height: 540px;
+  }
+
+  .menu-links{
+    padding: 0;
+  }
+
+  .sidebar.close{
+    width: 45px;
+  }
+
+  .search-box{
+    margin-left: 0;
+  }
+
+  .search-box input{
+    margin-left: 0;
+  }
+
+  .image img{
+    margin-right: 40px;
+  }
+
+  .image-text{
+    margin-left: 0;
+  }
+
+  .logo-text{
+    margin-left: -25px;
+  }
+
+  .h2-home{
+    font-size: 12px;
+  }
+
+  .upload_img{
+    margin-right: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn-upload{
+    margin-right: 15px;
+  }
+
+  .btn-acao{
+    margin-top: 5px;
+  }
+
+  .input-file-upload{
+    margin-top: -50%;
+  }
+
+  #achado, #local, #armazenado, #data{
+    margin-bottom: 10px;
+  }
+
+  .nav-text{
+    font-size: 12px;
+  }
+
+  .icons{
+    font-size: 30px;
+  }
+
+  .toggle{
+    top: 80px;
+    margin-right: -10px;
+  }
+
+  #descricaoItem, #observacoes{
+    margin-bottom: 0;
+    margin-top: -5px;
+  }
+
+  #achado, #local, #armazenado, #data{
+    padding: 5px;
+  }
  }
