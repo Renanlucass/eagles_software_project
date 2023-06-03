@@ -1283,3 +1283,37 @@
   }
  }
 
+ @media(max-width: 412px){
+
+  #titulo{
+    margin-bottom: 15px;
+  }
+
+  .formItem{
+    top: 0%;
+    height: 750px;
+  }
+
+  .input-file-upload{
+    display: contents;
+  }
+
+  .upload_img{
+    width: 150px;
+    height: 150px;
+  }
+
+  #achado, #local, #armazenado, #data{
+    width: 100%;
+  }
+
+  .container{
+    display: grid;
+    justify-content: start;
+  }
+
+  .container button{
+    padding: 10px 30px;
+    font-size: 10px;
+  }
+ }
