@@ -443,6 +443,22 @@
    transition: transform 0.5s ease;
  }
 
+ @media(max-width: 1024px) {
+   .form-login-cadastro {
+     height: 450px;
+   }
+ }
+
+ @media(max-width: 540px) {
+   .form-login-cadastro {
+     margin-top: -30px;
+   }
+
+   .link-page {
+     margin-right: 50px;
+   }
+ }
+
  @media (max-width:785px) {
    .logo-and-name img {
      max-width: 20%;
@@ -460,59 +476,31 @@
    }
  }
 
- @media (max-width: 545px) {
-   form {
-     margin-top: 25%;
-   }
-
-
-   .logo-and-name img {
-     max-width: 25%;
+ @media(max-width:414px) {
+   .form-login-cadastro {
+     padding: 45px;
+     height: 450px;
    }
 
    .texto-h4 {
-     width: 50%;
-     font-size: 13px;
-   }
-
-   input[type="submit"] {
-     margin-right: 100px;
-   }
-
-   .forgot-password {
      font-size: 12px;
    }
 
-   .link-cadastro {
-     text-align: center;
-     margin-left: 38%;
-   }
-
-   span {
-     margin-left: 25%;
-     font-size: 15px;
+   .link-page {
+     margin-left: 50px;
    }
  }
 
- @media(max-width: 484px) {
-   form {
-     margin-top: 30%;
-     max-width: 65%;
-   }
-
+ @media(max-width: 390px) {
    .texto-h4 {
-     font-size: 10px;
+     font-size: 11px
    }
  }
 
- @media (max-width: 425px) {
+ @media(max-width: 375px) {
    form {
      margin-top: 30%;
      max-width: 65%;
-   }
-
-   .logo-and-name img {
-     max-width: 25%;
    }
 
    .texto-h4 {
@@ -520,22 +508,11 @@
      font-size: 9px;
    }
 
-   span {
-     font-size: 13px;
+   h1 {
+     font-size: 20px
    }
  }
 
- @media(max-width: 393px) {
-   form {
-     margin-top: 30%;
-     max-width: 65%;
-   }
-
-   .texto-h4 {
-     width: 50%;
-     font-size: 8px;
-   }
- }
 
  /* CSS da página inicial */
 
@@ -791,34 +768,6 @@
  .icons {
    font-size: 33px;
  }
-
- /* @media(max-width: 545px) {
-   .sidebar header .image {
-     margin: 0;
-     margin-right: 20px;
-   }
-
-   .menu-links {
-     margin: 0;
-     padding: 0;
-   }
-
-   .nav-text {
-     font-size: 18px;
-   }
-
-   .image-text {
-     justify-content: center;
-   }
-
-   .logo-sidebar {
-     margin-left: 290px;
-   }
-
-   .h2-home {
-     font-size: 13px;
-   }
- } */
 
  /* CSS da Página de Cadastrar os itens */
 
@@ -1335,8 +1284,8 @@
    }
  }
 
- @media(max-width: 360px){
-  .formItem{
-    margin-top: 10px;
-  }
+ @media(max-width: 360px) {
+   .formItem {
+     margin-top: 10px;
+   }
  }
