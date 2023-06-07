@@ -99,13 +99,13 @@
 
         <div class="grupoItens">
             <div class="campoItem">
-                <label class="textItem" for="achado">Achado por:</label>
-                <input type="text" id="achado" name="achado" required>
+                <label  class="textItem" for="achador">Achado por:</label>
+                <input type="text" id="achador" name="achador" required>
             </div>
 
             <div class="campoItem">
-                <label class="textItem" for="local">Local:</label>
-                <input type="text" id="local" name="local" required>
+                <label  class="textItem" for="local">Local:</label>
+        <input type="text" id="local" name="local" required>
             </div>
 
             <div class="campoItem">
@@ -114,8 +114,8 @@
             </div>
 
             <div class="campoItem">
-                <label class="textItem" for="data">Data:</label>
-                <input type="text" id="data" name="data" required>
+                <label  class="textItem" for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
             </div>
 
             <div class="container">
@@ -123,7 +123,7 @@
                     <div class="upload-button">
                         <button class="btn-upload">
                             Selecione o arquivo
-                            <input type="file" id="upfile" onchange="readURL(this);">
+                            <input type="file" id="imagem" onchange="readURL(this);">
                         </button>
                     </div>
                     <img class="upload_img" id="file_upload">
@@ -132,21 +132,14 @@
         </div>
 
         <div class="itemDetails">
-            <label class="textItem" for="descricao-item">Descrição do item:</label>
-            <textarea id="descricaoItem" name="descricaoItem" rows="4" required></textarea>
-        </div>
+            <label for="detalhes">Detalhes do Item:</label><br>
+            <textarea id="detalhes" name="detalhes" rows="4" cols="50" required></textarea>
+          </div>
 
-        <div class="itemDetails">
-            <label class="textItem" for="observacoes">Outras observações:</label>
-            <textarea id="observacoes" name="observacoes" rows="4" required></textarea>
-        </div>
-
-        <div class="btn-acao">
-            <div class="btn-acao">
-                <button class="btn-submit" type="submit">Cadastrar</button>
-                <button class="btn-reset" type="reset">Limpar</button>
-            </div>
-        </div>
+          <div class="btn-acao">
+            <button class="btn-submit" type="submit" onclick="cadastrarItem()">Cadastrar</button>
+            <button class="btn-reset" type="reset">Limpar</button>
+          </div>
 
 
     </form>
@@ -154,6 +147,7 @@
     <script src="js/menu.js"></script>
     <script src="js/validar.js"></script>
     <script src="js/uploadFile.js"></script>
+    <script src="js/cadItem.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
