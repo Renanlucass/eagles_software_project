@@ -166,11 +166,11 @@ function excluirItem() {
   const index = parseInt(document.getElementById('itemList').selectedIndex);
 
   if (index === -1) {
-    alert('Por favor, selecione um item para excluir.');
+    alert('Por favor, selecione um item para remover.');
     return;
   }
 
-  const confirmacao = confirm('Tem certeza que deseja excluir o item?');
+  const confirmacao = confirm('Tem certeza que deseja remover o item?');
 
   if (confirmacao) {
     itemList.splice(index, 1);

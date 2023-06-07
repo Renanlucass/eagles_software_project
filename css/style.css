@@ -1421,11 +1421,13 @@
 }
 .itemDetails {
   flex-grow: 1;
+  font-family: sans-serif;
 }
 
 .itemDetails p {
   margin: 5px 0;
   font-weight: bold;
+  font-family: sans-serif;
 }
 
 .crud-row {
