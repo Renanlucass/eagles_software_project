@@ -297,7 +297,7 @@
 
  .form-login-cadastro {
    width: 380px;
-   height: 500px;
+   height: 450px;
    padding: 1.8cm;
    background-color: #fff;
    border-radius: 10px;
@@ -661,19 +661,27 @@
  }
 
  .toggle {
-   position: absolute;
-   top: 100px;
-   right: -5%;
-   font-size: 25px;
-   transform: translateY(-50%) rotate(180deg);
-   height: 25px;
-   width: 25px;
-   color: #000;
-   display: flex;
-   align-items: center;
-   transition: all 0.3s ease;
-   cursor: pointer;
- }
+  position: absolute;
+  right: -40px;
+  margin-top: 300px;
+  font-size: 25px;
+  transform: translateY(-50%) rotate(180deg);
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #565656;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.toggle:hover {
+  color: #000;
+}
 
  .close .toggle {
    transform: translateY(-50%) rotate(0deg);
@@ -791,12 +799,13 @@
  }
 
  .formItem {
-   width: 820px;
-   height: 600px;
-   padding: 1cm;
-   background-color: #fff;
-   border-radius: 20px;
-   box-shadow: 0px 10px 40px #a3a3a3;
+  width: 800px;
+  height: 680px;
+  padding: 1cm;
+  background-color: #fff;
+  margin-left: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #a3a3a3;
  }
 
  #titulo {
@@ -832,7 +841,7 @@
    text-align: start;
  }
 
- #detalhes {
+ #detalhes, #observacao {
    width: 100%;
    border: 2px solid #000;
    margin-bottom: 20px;
@@ -1263,32 +1272,30 @@
   margin-top: 10px;
 }
 
-#itemDetails button {
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: #5dbea3;
-  color: white;
-  border: none;
-  cursor: pointer;
+.btn-excluir{
+  background-color: #03858b;
+  color: #fff;
   border-radius: 5px;
-}
-
-#itemDetails button:hover {
-  background-color: #45a049;
+  padding: 3px;
+  cursor: pointer;
 }
 
 .crud-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centraliza os itens horizontalmente */
+  justify-content: center;
 }
 
 .crud-container li {
-  width: 45%; /* Define a largura para que haja espaço entre os itens */
-  height: 200px; /* Define uma altura fixa para os itens */
+  width: 45%;
+  height: 200px;
   border: 1px solid #ccc;
   box-sizing: border-box;
-  margin: 10px; /* Adiciona um espaço entre os itens */
+  margin: 10px;
+}
+
+.crud-container {
+  margin-bottom: 20px;
 }
 
 .clearfix::after {
@@ -1297,12 +1304,107 @@
   clear: both;
 }
 
-.itemContainer {
+.itemPair {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   margin-bottom: 20px;
+}
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: modal-open 0.3s ease-out;
+  }
+
+  #modalItemImagem{
+    width: 200px;
+    margin-left: 330px;
+    margin-top: -230px;
+  }
+
+  @keyframes modal-open {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn-acao {
+    margin-top: 10px;
+  }
+  
+  .btn-submit,
+  .btn-reset {
+    padding: 10px 20px;
+  }
+  
+  .btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .btn-reset {
+    background-color: #f44336;
+    color: white;
+    border: none;
+  }
+  
+  .btn-submit:hover,
+  .btn-reset:hover {
+    opacity: 0.8;
+  } 
+
+  .clearfix::after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+.itemContainer {
+  cursor: pointer;
+  padding: 10px;
   border: 2px solid;
   border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 350px;
+  margin: 20px;
 }
 
 .itemContainer img {
@@ -1346,12 +1448,6 @@
   border-right: none;
 }
 
-.itemContainer {
-  cursor: pointer;
-  padding: 10px;
-  border-bottom: 2px solid;
-  background-color: #fff;
-}
 
  /* CSS da Página de Perguntas Frequentes */
 
@@ -1413,7 +1509,6 @@
  .title-question {
    font-size: 1.2rem;
    font-weight: 500;
-   margin: 1.4rem 0rem;
    color: #000;
  }
 
@@ -1449,3 +1544,171 @@
  .show-text .up-icon {
    display: inline;
  }
+
+ @media(max-width: 1280px){
+  .container-faq{
+    width: 850px;
+    margin-left: 100px;
+  }
+ }
+
+ @media(max-width: 1024px){
+  .principal{
+    margin-top: -20px;
+  }
+
+  .container-faq{
+    width: 650px;
+    height: 560px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+
+  .principal-img{
+    width: 250px;
+  }
+
+  .title-question{
+    font-size: 13px;
+  }
+
+  .p-faq{
+    font-size: 11px;
+  }
+ }
+
+ @media(max-width: 540px){
+  .container-faq{
+    width: 400px;
+    height: 620px;
+    margin-left: 50px;
+  }
+
+  .title{
+    font-size: 20px;
+  }
+
+  .content-principal{
+    margin-top: 0;
+    margin-right: 10px;
+  }
+
+  .principal{
+    width: 100%;
+    display: block;
+    margin: 5px;
+  }
+
+  .faq-img{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .principal-img{
+    width: 150px;
+  }
+ }
+
+ @media(max-width: 420px){
+  .container-faq{
+    width: 300px;
+  }
+
+  .principal-img{
+    width: 100px;
+  }
+
+  .title-question{
+    font-size: 12px;
+  }
+ }
+
+ @media(max-width: 375px){
+  .container-faq{
+    width: 260px;
+  }
+
+  .title{
+    font-size: 15px;
+  }
+ }
+
+ /* CSS da página de perfil de usuário */
+
+ .containerPerfil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -180px;
+}
+
+.profile-picture {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-picture input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.edit-profile {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 75px);
+  transform: translate(-50%, -500%);
+}
+
+.edit-profile img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+

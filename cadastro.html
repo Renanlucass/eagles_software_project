@@ -12,7 +12,7 @@
 
 <body class="body-login">
   <main class="main-log">
-    <form class="form-login-cadastro">
+    <form id="cadastroForm" class="form-login-cadastro">
       <div class="logo-and-name">
         <img src="imagens/logo.png" alt="Logo">
         <h4 class="texto-h4">EAGLE'S SOFTWARE</h4>
@@ -42,7 +42,7 @@
             <i class="bi bi-eye" id="togglePassword"></i>
           </div>
 
-          <input type="submit" value="Cadastrar">
+          <input type="submit" value="Cadastrar" name="cadastro">
 
           <div class="link-page">
             <span>Já tem uma conta? <a class="link-cadastro" href="login.html">Login</a></span>
@@ -54,6 +54,7 @@
     </form>
 
   </main>
+  <script src="js/loginCadastro.js"></script>
   <script src="js/redirect.js"></script>
 </body>
 
