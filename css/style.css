@@ -198,57 +198,95 @@
 
  }
 
+ @media(max-width: 1140px){
+  .content{
+    padding: 0;
+  }
 
- @media (max-width:785px) {
-   .navigation {
-     padding: 0;
-   }
+  .text{
+    margin: 0;
+  }
 
-   .home-img img {
-     width: 90%;
-     margin-left: 10%;
-   }
+  .img-page{
+    margin-top: -80px;
+  }
 
-   .nav-item {
-     margin: 16px 0;
-   }
-
-   .home {
-     padding: 100px 2%;
-     flex-direction: column;
-     text-align: center;
-     overflow: hidden;
-     gap: 5rem;
-   }
-
-   .home-text {
-     margin-top: 50px;
-     max-width: 37rem;
-   }
-
-   .home .text-h4 {
-     font-size: 15px;
-   }
-
-   .home .text-h1 {
-     font-size: 2.5rem;
-     line-height: 3rem;
-   }
-
-   .home p {
-     font-size: 15px;
-   }
-
-   .home-img {
-     width: 125%;
-     margin-right: 10%;
-   }
-
-   .home-btn {
-     margin-right: 25%;
-   }
+  .logo-inicial{
+    margin-left: -80px;
+  }
  }
 
+ @media(max-width: 912px){
+  .content{
+    display: block;
+  }
+
+  .logo-inicial{
+    width: 100%;
+  }
+
+  .text{
+    width: 100%;
+    text-align: center;
+  }
+
+  .imgPage{
+    margin: auto;
+    position: static;
+  }
+
+  .img-page{
+    margin-top: 0;
+    height: 50%;
+    width: 80%;
+  }
+ }
+
+ @media(max-width: 540px){
+  .headerTitle{
+    display: block;
+    width: 100%;
+  }
+
+  .logo-inicial{
+    margin-top: -30px;
+  }
+
+  .text p{
+    margin: 0;
+    font-size: 25px;
+    margin-top: -25px;
+  }
+
+  .img-page{
+    margin-top: -60px;
+  }
+
+  .img-logoInicio{
+    width: 80px;
+  }
+
+  .h2-header{
+    font-size: 20px;
+  }
+ }
+
+ @media(max-width: 414px){
+  .img-page{
+    width: 400px;
+    height: 400px;
+    margin-top: 0;
+  }
+
+  .text p{
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .text p span{
+    font-size: 18px;
+  }
+ }
 
  /*CSS das páginas de login e cadastro*/
 
@@ -1344,8 +1382,8 @@
     background-color: #fefefe;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 80%;
+    border-radius: 10px;
     max-width: 600px;
   }
   
@@ -1552,6 +1590,10 @@
     width: 850px;
     margin-left: 100px;
   }
+
+  .title-question{
+    font-size: 17px;
+  }
  }
 
  @media(max-width: 1024px){
@@ -1708,9 +1750,3 @@
   font-size: 16px;
   margin-bottom: 20px;
 }
-
-
-
-
-
-

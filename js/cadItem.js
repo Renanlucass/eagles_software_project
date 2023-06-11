@@ -116,7 +116,7 @@ const exemploItem5 = {
   armazenado: 'Setor achados e perdidos',
   data: '02-06-2023',
   imagem: 'imagensCadastro/caderno_espiral_tilibra_neon_sem_pauta_1_4_a5_azul_3411_1_da2eb0c357f3cf0bce35436176ee2a35.webp',
-  detalhes: 'Caderno'
+  detalhes: 'Caderno cor azul'
 }
 
 const exemploItem6 = {
@@ -166,11 +166,11 @@ function excluirItem() {
   const index = parseInt(document.getElementById('itemList').selectedIndex);
 
   if (index === -1) {
-    alert('Por favor, selecione um item para remover.');
+    alert('Por favor, selecione um item para excluir.');
     return;
   }
 
-  const confirmacao = confirm('Tem certeza que deseja remover o item?');
+  const confirmacao = confirm('Tem certeza que deseja excluir o item?');
 
   if (confirmacao) {
     itemList.splice(index, 1);
