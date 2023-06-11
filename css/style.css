@@ -275,16 +275,23 @@
   .img-page{
     width: 400px;
     height: 400px;
-    margin-top: 0;
   }
 
   .text p{
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 0;
   }
 
   .text p span{
     font-size: 18px;
+  }
+
+  .btn{
+    margin-right: 50px;
+  }
+
+  .text a:before{
+    width: 165px;
   }
  }
 
