@@ -572,7 +572,7 @@
  @media(max-width:414px) {
    .form-login-cadastro {
      padding: 45px;
-     height: 450px;
+     height: 450px; 
    }
 
    .logo-and-name{
@@ -801,7 +801,7 @@
    border-radius: 6px;
    background-color: var(--primary-color-light);
    cursor: pointer;
-   margin-left: 15px;
+   margin-left: 50px;
    transition: var(--tran-05);
  }
 
@@ -1053,6 +1053,10 @@
 
   .sidebar {
     width: 220px;
+  }
+
+  .search-box{
+    margin-left: 15px;
   }
 
   .sidebar.close {
