@@ -853,13 +853,11 @@
 
  .grupoItens {
    margin-bottom: 15px;
-   /* display: flex; */
    justify-content: space-between;
  }
 
  .formGroup {
    margin-bottom: 15px;
-   /* display: flex; */
    justify-content: space-between;
  }
 
@@ -1251,7 +1249,7 @@
   }
 }
 
-/* CSS da página de itens cadastrados */
+/* CSS da página de itens encontrados */
 
 .listaItens{
   min-height: 100vh;
@@ -1334,6 +1332,7 @@
 
 .crud-container {
   margin-bottom: 20px;
+  margin-left: 50px;
 }
 
 .clearfix::after {
@@ -1446,7 +1445,7 @@
 }
 
 .itemContainer img {
-  width: 100px; /* Ajuste o tamanho conforme necessário */
+  width: 100px;
   margin-right: 10px;
   border-radius: 50%;
   border: 2px solid;
@@ -1488,6 +1487,62 @@
   border-right: none;
 }
 
+@media(max-width: 1280px){
+  .crud-container{
+    margin-left: 70px
+  }
+}
+
+@media(max-width: 1024px){
+  .itemPair{
+    display: block
+  }
+}
+
+@media(max-width: 820px){
+  .modal-content{
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+}
+
+@media(max-width: 540px){
+  .modal-content{
+    width: 350px;
+  }
+
+  .btn-excluir{
+    display: flex;
+  }
+
+  #modalItemImagem{
+    width: 150px;
+    margin-top: 0;
+    margin-left: 0
+  }
+}
+
+@media(max-width: 420px){
+  .itemContainer{
+    width: 300px;
+    height: 150px;
+  }
+
+  .modal-content{
+    width: 270px;
+    margin-left: 90px;
+  }
+
+  .h1-titulo{
+    margin-left: 40px;
+  }
+}
+
+@media(max-width: 395px){
+  .modal-content{
+    margin-left: 80px;
+  }
+}
 
  /* CSS da Página de Perguntas Frequentes */
 
