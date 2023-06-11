@@ -272,6 +272,10 @@
  }
 
  @media(max-width: 414px){
+  .bodyItem{
+    margin: 0;
+  }
+
   .img-page{
     width: 400px;
     height: 400px;
@@ -518,6 +522,43 @@
    }
  }
 
+ @media(max-width: 540px){
+  .logo-and-name{
+    margin-left: 60px;
+  }
+
+  span{
+    margin-left: 50px;
+  }
+
+  .texto-h4{
+    width: 100%;
+  }
+ }
+
+ @media(max-width: 480px) {
+  .form-login-cadastro{
+    width: 320px;
+  }
+
+  .logo-and-name{
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .texto-h4{
+    font-size: 14px;
+  }
+
+  .link-page{
+    margin-right: 0;
+  }
+
+  span{
+    margin-left: 0;
+  }
+ }
+
  @media(max-width:414px) {
    .form-login-cadastro {
      padding: 45px;
@@ -526,10 +567,12 @@
 
    .texto-h4 {
      font-size: 12px;
+     width: auto;
    }
 
    .link-page {
      margin-left: 50px;
+     width: 70%;
    }
  }
 
