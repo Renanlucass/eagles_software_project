@@ -575,6 +575,10 @@
      height: 450px;
    }
 
+   .logo-and-name{
+    margin-left: -15px;
+  }
+
    .texto-h4 {
      font-size: 12px;
      width: auto;
