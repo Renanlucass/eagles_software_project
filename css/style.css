@@ -170,7 +170,7 @@
    letter-spacing: 2px;
    font-weight: 500;
    margin-top: 30px;
-   width: 15%;
+   width: 25%;
  }
 
  .text a:before {
@@ -187,7 +187,7 @@
  }
 
  .text a:hover:before {
-   width: 100%;
+   width: 165px;
  }
 
  .imgPage {
