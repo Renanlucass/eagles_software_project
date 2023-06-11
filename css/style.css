@@ -299,6 +299,16 @@
   }
  }
 
+ @media(max-width: 390px){
+  .text p{
+    font-size: 17px;
+  }
+
+  .img-page{
+    margin-left: 22%;
+  }
+ }
+
  /*CSS das páginas de login e cadastro*/
 
  .body-login {
