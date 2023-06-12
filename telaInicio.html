@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Home</title>
+    <title>Itens Encontrados</title>
 </head>
+<body class="listaItens">
 
-<body class="body-home">
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -92,8 +91,41 @@
 
     </nav>
 
+    <div class="buscaItem">
+        <form class="form-search">
+            <div class="form-input">
+                <input type="search" placeholder="Buscar...">
+                <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
+            </div>
+        </form>
+    </div>
+
+    <section id="banner">
+        <h2 class="h2-banner">Bem-vindo ao Sistema de Achados e Perdidos!</h2>
+        <p>Encontre seus itens perdidos de forma rápida.</p>
+    </section>
+
+    <h1 class="h1-titulo">Itens Recentes</h1>
+
+    <div class="crud-container">
+        <ul id="itemList" class="clearfix"></ul>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Detalhes do Item</h2>
+            <p class="descricao"><strong>Achado Por:</strong> <span id="modalItemAchador"></span></p>
+            <p class="descricao"><strong>Local:</strong> <span id="modalItemLocal"></span></p>
+            <p class="descricao"><strong>Armazenado:</strong> <span id="modalItemArmazenado"></span></p>
+            <p class="descricao"><strong>Data:</strong> <span id="modalItemData"></span></p>
+            <p class="descricao"><strong>Descrição:</strong> <span id="modalItemDescricao"></span></p>
+            <img id="modalItemImagem" src="" alt="Imagem do Item">
+            <button class="btn-excluir" onclick="excluirItem()">Remover</button>
+        </div>
+    </div>
+
+    <script src="js/cadItem.js"></script>
     <script src="js/menu.js"></script>
-
 </body>
-
 </html>

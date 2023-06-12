@@ -1,9 +1,15 @@
 function cadastrarItem() {
   const achador = document.getElementById('achador').value;
-  const local = document.getElementById('local').value; const armazenado = document.getElementById('armazenado').value;
+  const local = document.getElementById('local').value;
+  const armazenado = document.getElementById('armazenado').value;
   const data = document.getElementById('data').value;
   const imagem = document.getElementById('imagem').value;
   const detalhes = document.getElementById('detalhes').value;
+
+  if (achador === '' || local === '' || armazenado === '' || data === '' || imagem === '' || detalhes === '') {
+    alert('Por favor, preencha todos os campos antes de cadastrar o item.');
+    return;
+  }
 
   const item = {
     achador: achador,
@@ -27,6 +33,9 @@ function cadastrarItem() {
 
   alert('Item cadastrado com sucesso!');
 }
+
+
+// const itemList = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
 function exibirItens() {
   const itemListElement = document.getElementById('itemList');
