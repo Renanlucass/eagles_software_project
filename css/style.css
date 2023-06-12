@@ -871,16 +871,14 @@ footer {
  text-align: center;
 }
 
-/* Estilos específicos para a página de home */
 #banner {
-  width: 63%;
+  width: 55%;
   height: 138px;
   color: #fff;
   margin-top: 10px;
   padding: 10px;
   border-radius: 8px;
-  /* padding: 0.5rem 1rem 1rem 3rem; */
-  margin-left: 20%;
+  margin-left: 22%;
   background: #187194;
 
 }
@@ -898,11 +896,11 @@ footer {
   padding: 0 16px;
   margin-left: 35px;
   height: 50%;
+  width: 25%;
   border: none;
   background-color: #ccc;
   border-radius: 36px 0 0 36px;
   outline: none;
- 
  }
  
  .search-btn{
@@ -922,6 +920,12 @@ footer {
  
  .input-group-append{
  margin-left:-1px;
+ }
+
+ @media(max-width: 400px){
+  #banner{
+    width: 70%;
+  }
  }
 
 
@@ -1296,27 +1300,8 @@ footer {
  .btn-submit,
  .btn-reset {
    width: 120px;
- }
+  }
 }
-
-@media(max-width: 480px) {
- .image-text{
-   margin-left: 0;
- }
-
- .logo-text{
-  margin-left: -15px;
- }
-
- .image img{
-  margin-left: 10px;
- }
-
- .form-input{
-  width: 415px;
- }
-}
-
 @media(max-width: 560px) {
 
  #titulo {
@@ -1355,6 +1340,34 @@ footer {
    font-size: 10px;
  }
 }
+
+@media(max-width: 480px) {
+ .image-text{
+   margin-left: 0;
+ }
+
+ .logo-text{
+  margin-left: -15px;
+ }
+
+ .image img{
+  margin-left: 10px;
+ }
+
+ .form-input{
+  width: 415px;
+ }
+}
+
+@media(max-width: 400px){
+  .formItem{
+    padding: 10px;
+    height: 760px;
+    width: 298px;
+    margin-left: 24px;
+  }
+}
+
 
 @media(max-width: 360px) {
  .formItem {
@@ -1657,9 +1670,18 @@ footer {
  }
 }
 
-@media(max-width: 395px){
+@media(max-width: 400px){
  .modal-content{
    margin-left: 80px;
+ }
+
+ #itemList{
+  background: transparent;
+  box-shadow: none
+ }
+
+ input[type="search"] {
+  width: 50%;
  }
 }
 
@@ -1680,7 +1702,7 @@ footer {
 }
 
 .container-faq {
-  position: relative;
+  position: absolute;
   background: #fff;
   height: 750px;
   width: 900px;
@@ -1850,7 +1872,8 @@ footer {
 
 @media(max-width: 420px){
  .container-faq{
-   width: 300px;
+  width: 300px;
+  margin-left: 18%;
  }
 
  .principal-img{
