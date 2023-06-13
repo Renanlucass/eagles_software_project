@@ -332,6 +332,7 @@ h1 {
   font-size: 25px;
   margin-block-start: auto;
   margin: revert;
+  font-family: sans-serif;
 }
 
 .texto-h4 {
@@ -872,13 +873,13 @@ footer {
 }
 
 #banner {
-  width: 55%;
+  width: 47%;
   height: 138px;
   color: #fff;
   margin-top: 10px;
   padding: 10px;
   border-radius: 8px;
-  margin-left: 22%;
+  margin-left: 27%;
   background: #187194;
 
 }

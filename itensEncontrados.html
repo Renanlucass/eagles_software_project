@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Itens Encontrados</title>
 </head>
+
 <body class="listaItens">
 
     <nav class="sidebar close">
@@ -91,16 +93,15 @@
 
     </nav>
 
-    <div class="buscaItem">
-        <form class="form-search">
-            <div class="form-input">
-                <input type="search" placeholder="Buscar...">
-                <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
-            </div>
-        </form>
-    </div>
+    <form class="form-search" id="searchForm">
+        <div class="form-input">
+            <input type="search" id="searchInput" placeholder="Buscar...">
+            <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
+        </div>
+    </form>
 
-    <h1 class="h1-titulo">Itens Cadastrados</h1>
+
+    <h1 class="h1-titulo">Todos os itens Cadastrados</h1>
 
     <div class="crud-container">
         <ul id="itemList" class="clearfix"></ul>
@@ -123,4 +124,5 @@
     <script src="js/cadItem.js"></script>
     <script src="js/menu.js"></script>
 </body>
+
 </html>

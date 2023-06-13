@@ -34,19 +34,18 @@ function cadastrarItem() {
   alert('Item cadastrado com sucesso!');
 }
 
+const itemList = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
-// const itemList = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
-
-function exibirItens() {
+function exibirItens(items = itemList) {
   const itemListElement = document.getElementById('itemList');
   itemListElement.innerHTML = '';
 
-  for (let i = 0; i < itemList.length; i += 2) {
+  for (let i = 0; i < items.length; i += 2) {
     const itemPairElement = document.createElement('div');
     itemPairElement.className = 'itemPair';
 
-    for (let j = i; j < i + 2 && j < itemList.length; j++) {
-      const item = itemList[j];
+    for (let j = i; j < i + 2 && j < items.length; j++) {
+      const item = items[j];
 
       const itemElement = document.createElement('div');
       itemElement.className = 'itemContainer';
@@ -116,7 +115,7 @@ const exemploItem4 = {
   armazenado: 'Setor achados e perdidos',
   data: '03-06-2023',
   imagem: 'imagensCadastro/fb25646a83.webp',
-  detalhes: 'Garrafa de Água'
+  detalhes: 'Garrafa térmica'
 }
 
 const exemploItem5 = {
@@ -137,8 +136,8 @@ const exemploItem6 = {
   detalhes: 'Boné preto'
 }
 
-const itemList = [exemploItem1, exemploItem2, exemploItem3, exemploItem4,exemploItem5, exemploItem6];
-localStorage.setItem('items', JSON.stringify(itemList));
+// const itemList = [exemploItem1, exemploItem2, exemploItem3, exemploItem4,exemploItem5, exemploItem6];
+// localStorage.setItem('items', JSON.stringify(itemList));
 
 exibirItens();
 
@@ -158,7 +157,8 @@ function exibirModal(index) {
 }
 
 function fecharModal() {
-  const modal = document.getElementById('modal');
+  const modal
+    = document.getElementById('modal');
   modal.classList.remove('open');
 
   setTimeout(function () {
@@ -189,4 +189,36 @@ function excluirItem() {
   }
 }
 
+function buscarItens() {
+  const searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+  const filteredItems = itemList.filter(function (item) {
+    return item.detalhes.toLowerCase().includes(searchTerm);
+  });
+
+  if (filteredItems.length === 0) {
+    alert('Nenhum item corresponde à busca.');
+  }
+
+  exibirItens(filteredItems);
+}
+
+function limparBusca() {
+  document.getElementById('searchInput').value = '';
+  exibirItens();
+}
+
 exibirItens();
+
+document.getElementById('searchForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+  buscarItens();
+});
+
+document.getElementById('searchInput').addEventListener('input', function () {
+  const searchTerm = this.value.trim().toLowerCase();
+
+  if (searchTerm === '') {
+    limparBusca();
+  }
+});
+

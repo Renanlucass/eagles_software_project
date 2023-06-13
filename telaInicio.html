@@ -91,21 +91,15 @@
 
     </nav>
 
-    <div class="buscaItem">
-        <form class="form-search">
-            <div class="form-input">
-                <input type="search" placeholder="Buscar...">
-                <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
-            </div>
-        </form>
-    </div>
+    <form class="form-search" id="searchForm">
+        <div class="form-input">
+            <input type="search" id="searchInput" placeholder="Buscar...">
+            <button type="submit" class="search-btn"><i class="bi bi-search"></i></button>
+        </div>
+    </form>
 
-    <section id="banner">
-        <h2 class="h2-banner">Bem-vindo ao Sistema de Achados e Perdidos!</h2>
-        <p>Encontre seus itens perdidos de forma rápida.</p>
-    </section>
 
-    <h1 class="h1-titulo">Itens Recentes</h1>
+    <h1 class="h1-titulo">Itens cadastrados recentemente</h1>
 
     <div class="crud-container">
         <ul id="itemList" class="clearfix"></ul>
