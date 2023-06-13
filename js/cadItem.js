@@ -20,7 +20,7 @@ function cadastrarItem() {
     detalhes: detalhes
   };
 
-  const itemList = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+
   itemList.push(item);
   localStorage.setItem('items', JSON.stringify(itemList));
 
@@ -72,7 +72,7 @@ function exibirItens(items = itemList) {
       itemElement.appendChild(itemDetailsElement);
 
       itemElement.onclick = function () {
-        exibirModal(j);
+        exibirModal(item);
       };
 
       itemPairElement.appendChild(itemElement);
@@ -86,8 +86,8 @@ const exemploItem1 = {
   achador: 'Renan Lucas',
   local: 'Sala de aula Bloco E',
   armazenado: 'Setor achados e perdidos',
-  data: '06-06-2023',
-  imagem: 'imagensCadastro/89870e19b8.webp',
+  data: '04-06-2023',
+  imagem: 'imagensCadastro/chave.webp',
   detalhes: 'Chave de uma moto'
 };
 
@@ -95,7 +95,7 @@ const exemploItem2 = {
   achador: 'Renan Lucas',
   local: 'Pátio',
   armazenado: 'Setor achados e perdidos',
-  data: '05-06-2023',
+  data: '04-06-2023',
   imagem: 'imagensCadastro/carregador-de-celular-parede-com-1-porta-usb-2-0a-bivolt-branco-com-cabo-micro-usb-v8-x-cell-xc-kit-v8-sinop-03-ec07421e..jpg',
   detalhes: 'Carregador de celular'
 };
@@ -104,52 +104,106 @@ const exemploItem3 = {
   achador: 'João Victor',
   local: 'Auditório',
   armazenado: 'Setor achados e perdidos',
-  data: '04-06-2023',
+  data: '05-06-2023',
   imagem: 'imagensCadastro/download.jpeg',
   detalhes: 'Carteira de couro'
 };
 
-const exemploItem4 = {
-  achador: 'João Victor',
-  local: 'Refeitório',
-  armazenado: 'Setor achados e perdidos',
-  data: '03-06-2023',
-  imagem: 'imagensCadastro/fb25646a83.webp',
-  detalhes: 'Garrafa térmica'
-}
 
-const exemploItem5 = {
+const exemploItem4 = {
   achador: 'Lailson',
   local: 'Laboratório',
   armazenado: 'Setor achados e perdidos',
-  data: '02-06-2023',
+  data: '06-06-2023',
   imagem: 'imagensCadastro/caderno_espiral_tilibra_neon_sem_pauta_1_4_a5_azul_3411_1_da2eb0c357f3cf0bce35436176ee2a35.webp',
   detalhes: 'Caderno cor azul'
+}
+
+
+const exemploItem5 = {
+  achador: 'João Victor',
+  local: 'Refeitório',
+  armazenado: 'Setor achados e perdidos',
+  data: '07-06-2023',
+  imagem: 'imagensCadastro/fb25646a83.webp',
+  detalhes: 'Garrafa térmica'
 }
 
 const exemploItem6 = {
   achador: 'Lailson',
   local: 'Laboratório',
   armazenado: 'Setor achados e perdidos',
-  data: '01-06-2023',
+  data: '10-06-2023',
+  imagem: 'imagensCadastro/garrafa.webp',
+  detalhes: 'Garrafa Twpperware azul'
+}
+
+const exemploItem7 = {
+  achador: 'Lailson',
+  local: 'Laboratório',
+  armazenado: 'Setor achados e perdidos',
+  data: '10-06-2023',
+  imagem: 'imagensCadastro/chuteira.webp',
+  detalhes: 'Chuteira da Nike cor preta'
+}
+const exemploItem8 = {
+  achador: 'Lailson',
+  local: 'Laboratório',
+  armazenado: 'Setor achados e perdidos',
+  data: '12-06-2023',
+  imagem: 'imagensCadastro/relogio.jpg',
+  detalhes: 'Rélogio digital'
+}
+const exemploItem9 = {
+  achador: 'Lailson',
+  local: 'Laboratório',
+  armazenado: 'Setor achados e perdidos',
+  data: '12-06-2023',
   imagem: 'imagensCadastro/bone_snapback_aba_curva_classic_hats_preto_liso_1669_1_20180831162410.webp',
   detalhes: 'Boné preto'
 }
 
-// const itemList = [exemploItem1, exemploItem2, exemploItem3, exemploItem4,exemploItem5, exemploItem6];
-// localStorage.setItem('items', JSON.stringify(itemList));
+const exemploItem10 = {
+  achador: 'Lailson',
+  local: 'Laboratório',
+  armazenado: 'Setor achados e perdidos',
+  data: '12-06-2023',
+  imagem: 'imagensCadastro/chaveiro.jpg',
+  detalhes: 'chaveiro'
+}
+
+const exemploItem11 = {
+  achador: 'Lailson',
+  local: 'Laboratório',
+  armazenado: 'Setor achados e perdidos',
+  data: '13-06-2023',
+  imagem: 'imagensCadastro/mochila rosa.webp',
+  detalhes: 'Mochila rosa'
+}
+
+const exemploItem12 = {
+  achador: 'Lailson',
+  local: 'Laboratório',
+  armazenado: 'Setor achados e perdidos',
+  data: '13-06-2023',
+  imagem: 'imagensCadastro/89870e19b8.webp',
+  detalhes: 'Mochila preta'
+}
+
+
+// const itemList = [exemploItem1, exemploItem2, exemploItem3, exemploItem4,exemploItem5, exemploItem6, exemploItem7, exemploItem8, exemploItem9, exemploItem10, exemploItem11, exemploItem12];
+// localStorage.setItem('items', JSON.stringify(itemList)); 
 
 exibirItens();
 
-function exibirModal(index) {
-  const item = itemList[index];
+function exibirModal(item) {
   document.getElementById('modalItemAchador').textContent = item.achador;
   document.getElementById('modalItemLocal').textContent = item.local;
   document.getElementById('modalItemArmazenado').textContent = item.armazenado;
   document.getElementById('modalItemData').textContent = item.data;
   document.getElementById('modalItemDescricao').textContent = item.detalhes;
   document.getElementById('modalItemImagem').src = item.imagem;
-
+  
   const modal = document.getElementById('modal');
   modal.style.display = 'block';
 
@@ -207,8 +261,6 @@ function limparBusca() {
   exibirItens();
 }
 
-exibirItens();
-
 document.getElementById('searchForm').addEventListener('submit', function (event) {
   event.preventDefault();
   buscarItens();
@@ -221,4 +273,7 @@ document.getElementById('searchInput').addEventListener('input', function () {
     limparBusca();
   }
 });
+
+exibirItens();
+
 

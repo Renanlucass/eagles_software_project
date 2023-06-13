@@ -1390,9 +1390,14 @@ footer {
   list-style-type: none;
   border-radius: 10px;
   padding: 0;
+  display: contents;
   margin: 20px 0;
   background: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.itemRow{
+  display: flex;
 }
 
 #itemList li {
@@ -1450,6 +1455,9 @@ footer {
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
+ margin-bottom: 20px;
+ width: 85%;
+ margin-left: 100px;
 }
 
 .crud-container li {
@@ -1462,7 +1470,7 @@ footer {
 
 .crud-container {
  margin-bottom: 20px;
- margin-left: 50px;
+ margin-left: 100px;
 }
 
 .clearfix::after {
@@ -1472,8 +1480,7 @@ footer {
 }
 
 .itemPair {
- display: flex;
- justify-content: space-between;
+  display: contents;
  margin-bottom: 20px;
 }
 
@@ -1624,11 +1631,15 @@ footer {
  .crud-container{
    margin-left: 70px
  }
+
+ .itemRow{
+  display: contents;
+ }
 }
 
 @media(max-width: 1024px){
  .itemPair{
-   display: block
+   display: contents;
  }
 }
 
