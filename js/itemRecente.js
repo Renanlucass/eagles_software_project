@@ -13,6 +13,8 @@ function cadastrarItemManualmente(achador, local, armazenado, data, imagem, deta
     itemList.push(item);
 }
 
+//Dados utilizados para demonstração da tela de home
+
 cadastrarItemManualmente(
     'Renan Lucas',
     'Sala de aula Bloco E',
