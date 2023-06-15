@@ -1,6 +1,6 @@
 self.addEventListener('install', (event) => {
     event.waitUntil(
-        caches.open(version).then((cache) => {
+        caches.open('Eagles Software').then((cache) => {
             return cache.addAll([
                 '/index.html',
                 '/login.html',
