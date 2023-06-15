@@ -16,29 +16,23 @@ self.addEventListener('install', (event) => {
     );
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', function (event) {
     event.waitUntil(
-        caches.keys().then((cacheNames) => {
+        caches.keys().then(function (cacheNames) {
             return Promise.all(
-                cacheNames
-                    .filter((cacheName) => {
-                        return cacheName !== version;
-                    })
-                    .map((cacheName) => {
-                        return caches.delete(cacheName);
-                    })
+                cacheNames.filter(function (cacheName) {
+                }).map(function (cacheName) {
+                    return caches.delete(cacheName);
+                })
             );
         })
     );
 });
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', function (event) {
     event.respondWith(
-        caches.match(event.request).then((response) => {
-            if (response) {
-                return response;
-            }
-            return fetch(event.request);
+        caches.match(event.request).then(function (response) {
+            return response || fetch(event.request);
         })
     );
 });
