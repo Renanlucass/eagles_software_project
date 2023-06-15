@@ -1,6 +1,8 @@
-self.addEventListener('install', (event) => {
+const cacheVersion = 'v1';
+
+self.addEventListener('install', event => {
     event.waitUntil(
-        caches.open('Eagles Software').then((cache) => {
+        caches.open(cacheVersion).then(cache => {
             return cache.addAll([
                 '/index.html',
                 '/login.html',
@@ -29,9 +31,9 @@ self.addEventListener('activate', function (event) {
     );
 });
 
-self.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', event => {
     event.respondWith(
-        caches.match(event.request).then(function (response) {
+        caches.match(event.request).then(response => {
             return response || fetch(event.request);
         })
     );
