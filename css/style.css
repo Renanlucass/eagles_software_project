@@ -923,9 +923,24 @@ footer {
  margin-left:-1px;
  }
 
- @media(max-width: 400px){
+ @media(max-width: 420px){
+  .listaItens{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+  }
+
   #banner{
     width: 70%;
+  }
+  #searchInput{
+    width: 50%;
+  }
+
+  .h1-titulo{ 
+    width: 70%;
+    font-size: 20px;
+    margin-right: 40px;
   }
  }
 
@@ -1190,9 +1205,9 @@ footer {
  }
 
  .toggle {
-   top: 80px;
-   margin-right: -10px;
- }
+  top: 80px;
+  margin-right: 4px;
+}
 
  #descricaoItem,
  #observacoes {
@@ -1360,7 +1375,7 @@ footer {
  }
 }
 
-@media(max-width: 400px){
+@media(max-width: 420px){
   .formItem{
     padding: 10px;
     height: 760px;

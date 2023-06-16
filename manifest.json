@@ -5,17 +5,17 @@
   "display": "standalone",
   "name": "Eagles Software",
   "orientation": "portrait",
+  "prefer_related_applications": false,
   "scope": "/",
   "short_name": "Eagles Software",
   "start_url": "https://eagles-software.netlify.app/",
   "theme_color": "#1e1f31",
+  "lang": "pt",
   "icons": [
     {
       "src": "imagens/logotipo-fator.png",
       "sizes": "192x192",
       "type": "image/png"
     }
-  ],
-  "lang": "pt",
-  "prefer_related_applications": false
-}
+  ]
+} 
